@@ -1,13 +1,13 @@
+import "reflect-metadata"
 import express from "express"
+import { router } from "./routes"
+
+import "./database"
 
 const app = express()
 
+app.use(express.json())
+
+app.use(router)
+
 app.listen(3000, () => { console.log('Server is running NLW') })
-
-app.get('/teste', (request, response) => {
-    return response.send('ola')
-})
-
-app.post('/teste-post', (request, response) => {
-    return response.send('ola post')
-})
