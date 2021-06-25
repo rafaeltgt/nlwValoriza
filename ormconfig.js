@@ -3,7 +3,7 @@ module.exports = {
     "url": process.env.DATABASE_URL,
     "ssl": "no-verify",
     "migrations": [
-        "build/database/migrations/*.js"
+        "src/database/migrations/*.ts"
     ],
     "entities": [
         "build/entities/*.js"
