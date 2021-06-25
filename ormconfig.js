@@ -1,6 +1,9 @@
 module.exports = {
     "type": "postgres",
     "url": process.env.DATABASE_URL,
+    "extra": {
+        "ssl": true
+    },
     "migrations": [
         "build/database/migrations/*.js"
     ],
