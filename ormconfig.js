@@ -3,10 +3,10 @@ module.exports = {
     "url": process.env.DATABASE_URL,
     "ssl": "no-verify",
     "migrations": [
-        "src/database/migrations/*.ts"
+        "dist/database/migrations/*.js"
     ],
     "entities": [
-        "build/entities/*.js"
+        "dist/entities/*.js"
     ],
     "cli": {
         "migrationsDir": "src/database/migrations",
