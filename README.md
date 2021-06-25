@@ -8,5 +8,5 @@ Principais tecnologias utilizadas:
  - TypeORM
  - Biblioteca Express
  - SQL
- - Autenticação
  - Tokens JWT
+ - Autenticação com bearer token
