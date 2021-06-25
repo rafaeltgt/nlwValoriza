@@ -25,7 +25,7 @@ class SendTelegramService {
 
         const resp = axios.post(telegramUrl, {
             chat_id: parseInt(process.env.TELEGRAM_CHAT_ID),
-            text: `WOW!\n\n${receiver.name} just received a compliment from ${sender.name} due his/her ${tag.name} skills!!!\n\n Also got a message:\n${message}`
+            text: `WOW!\n\n${receiver.name} just received a compliment from ${sender.name} due his/her ${tag.name} skills!!!\n\nAlso got a message:\n${message}`
         })
 
         console.log(resp)
