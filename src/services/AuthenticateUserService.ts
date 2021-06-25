@@ -33,7 +33,7 @@ class AuthenticateUserService {
         //gera token
         const token = sign({
             email: user.email
-        }, "134b39f02b579894342ac1be33d583ac", {
+        }, process.env.PRIVATE_KEY, {
             subject: user.id,
             expiresIn: "1d"
         })
