@@ -36,4 +36,4 @@ Funcionalidades adicionadas após o término da última aula por conta própria:
   
   - uso de Postgres no lugar do SQLITE
   
-  - Deploy para o Heroku
+  - Deploy para o Heroku - https://nlwvaloriza-rtgt.herokuapp.com/
